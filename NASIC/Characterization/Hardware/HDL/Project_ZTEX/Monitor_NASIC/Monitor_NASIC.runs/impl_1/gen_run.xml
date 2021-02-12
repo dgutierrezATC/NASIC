@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a75tcsg324-2" LaunchTime="1602525791">
+  <File Type="PWROPT-DCP" Name="NASIC_monitor_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="NASIC_monitor_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="NASIC_monitor.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="NASIC_monitor_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="NASIC_monitor_reports.tcl"/>
+  <File Type="BG-DRC" Name="NASIC_monitor.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="NASIC_monitor_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="NASIC_monitor_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="NASIC_monitor.hwdef"/>
+  <File Type="OPT-DCP" Name="NASIC_monitor_opt.dcp"/>
+  <File Type="OPT-DRC" Name="NASIC_monitor_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="NASIC_monitor_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="NASIC_monitor_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="NASIC_monitor_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="NASIC_monitor_placed.dcp"/>
+  <File Type="PLACE-IO" Name="NASIC_monitor_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="NASIC_monitor_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="NASIC_monitor_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="NASIC_monitor_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="NASIC_monitor_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="NASIC_monitor_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="NASIC_monitor_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="NASIC_monitor_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="NASIC_monitor_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="NASIC_monitor_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="NASIC_monitor_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="NASIC_monitor_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="NASIC_monitor.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="NASIC_monitor_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="NASIC_monitor_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="NASIC_monitor_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="NASIC_monitor_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="NASIC_monitor_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="NASIC_monitor_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="NASIC_monitor.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="NASIC_monitor_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="NASIC_monitor.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="NASIC_monitor_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="NASIC_monitor.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="NASIC_monitor_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="NASIC_monitor.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="NASIC_monitor_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="NASIC_monitor_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="NASIC_monitor_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="NASIC_monitor_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="NASIC_monitor_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="NASIC_monitor_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="NASIC_monitor_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="NASIC_monitor_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="NASIC_monitor.vdi"/>
+  <File Type="ROUTE-CLK" Name="NASIC_monitor_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="NASIC_monitor_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="NASIC_monitor_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="NASIC_monitor_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="NASIC_monitor_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="NASIC_monitor_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="NASIC_monitor.nky"/>
+  <File Type="BITSTR-BMM" Name="NASIC_monitor_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="NASIC_monitor.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="NASIC_monitor.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="NASIC_monitor.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/AER_DISTRIBUTED_MONITOR.vhd"/>
+        <Attr Name="ImportTime" Val="1561713358"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd"/>
+        <Attr Name="ImportTime" Val="1561713373"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/AER_OUT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/AER_OUT.vhd"/>
+        <Attr Name="ImportTime" Val="1554470209"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/DualPortRAM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/DualPortRAM.vhd"/>
+        <Attr Name="ImportTime" Val="1518778220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/handsakeOut.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/handsakeOut.vhd"/>
+        <Attr Name="ImportTime" Val="1563380648"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/ramfifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/ramfifo.vhd"/>
+        <Attr Name="ImportTime" Val="1561644705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/Monitor_ASIC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/Monitor_ASIC.vhd"/>
+        <Attr Name="ImportTime" Val="1602520280"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="NASIC_monitor"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Sources/NASIC_monitor_ztex.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

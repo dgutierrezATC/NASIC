@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a75tcsg324-2" LaunchTime="1602525791">
+  <File Type="PA-TCL" Name="NASIC_monitor.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="NASIC_monitor_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="NASIC_monitor_reports.tcl"/>
+  <File Type="RDS-RDS" Name="NASIC_monitor.vds"/>
+  <File Type="RDS-UTIL" Name="NASIC_monitor_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="NASIC_monitor_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="NASIC_monitor.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="NASIC_monitor_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="NASIC_monitor_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/AER_DISTRIBUTED_MONITOR.vhd"/>
+        <Attr Name="ImportTime" Val="1561713358"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd"/>
+        <Attr Name="ImportTime" Val="1561713373"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/AER_OUT.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/AER_OUT.vhd"/>
+        <Attr Name="ImportTime" Val="1554470209"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/DualPortRAM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/DualPortRAM.vhd"/>
+        <Attr Name="ImportTime" Val="1518778220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/handsakeOut.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/handsakeOut.vhd"/>
+        <Attr Name="ImportTime" Val="1563380648"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/ramfifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/ramfifo.vhd"/>
+        <Attr Name="ImportTime" Val="1561644705"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Sources/Monitor_ASIC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Sources/Monitor_ASIC.vhd"/>
+        <Attr Name="ImportTime" Val="1602520280"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="NASIC_monitor"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Sources/NASIC_monitor_ztex.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

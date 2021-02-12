@@ -1,0 +1,2 @@
+vhdl work ../../clock48mhz.vhd
+vhdl work ../example_design/clock48mhz_exdes.vhd

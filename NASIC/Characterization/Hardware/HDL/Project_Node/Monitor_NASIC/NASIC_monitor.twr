@@ -1,0 +1,105 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml NASIC_monitor.twx NASIC_monitor.ncd -o NASIC_monitor.twr
+NASIC_monitor.pcf
+
+Design file:              NASIC_monitor.ncd
+Physical constraint file: NASIC_monitor.pcf
+Device,package,speed:     xc6slx150t,fgg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock i_clock
+-----------------------+------------+------------+------------+------------+------------------+--------+
+                       |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source                 | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-----------------------+------------+------------+------------+------------+------------------+--------+
+i_aer_ack              |    6.570(R)|      SLOW  |   -3.545(R)|      FAST  |r_generated_clock |   0.000|
+i_ext_rst              |   26.835(R)|      SLOW  |   -9.915(R)|      FAST  |r_generated_clock |   0.000|
+i_ext_rst_from_NASIC   |   21.013(R)|      SLOW  |   -6.379(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<0> |    5.373(R)|      SLOW  |   -1.150(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<1> |    5.410(R)|      SLOW  |   -1.017(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<2> |    6.435(R)|      SLOW  |   -1.573(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<3> |    6.188(R)|      SLOW  |   -1.494(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<4> |    9.981(R)|      SLOW  |   -3.178(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<5> |    9.867(R)|      SLOW  |   -3.161(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<6> |    5.094(R)|      SLOW  |   -1.708(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<7> |    6.705(R)|      SLOW  |   -1.385(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<8> |    6.763(R)|      SLOW  |   -1.882(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<9> |    6.919(R)|      SLOW  |   -1.888(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<10>|    7.314(R)|      SLOW  |   -2.150(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<11>|    6.974(R)|      SLOW  |   -1.828(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<12>|    8.122(R)|      SLOW  |   -1.073(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<13>|    6.296(R)|      SLOW  |   -1.090(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<14>|    6.002(R)|      SLOW  |   -0.949(R)|      FAST  |r_generated_clock |   0.000|
+i_spikes_from_NASIC<15>|    6.176(R)|      SLOW  |   -1.054(R)|      FAST  |r_generated_clock |   0.000|
+-----------------------+------------+------------+------------+------------+------------------+--------+
+
+Clock i_clock to Pad
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+o_aer_data<0>   |         7.079(R)|      SLOW  |         4.361(R)|      FAST  |r_generated_clock |   0.000|
+o_aer_data<1>   |         6.708(R)|      SLOW  |         4.123(R)|      FAST  |r_generated_clock |   0.000|
+o_aer_data<2>   |         6.628(R)|      SLOW  |         4.061(R)|      FAST  |r_generated_clock |   0.000|
+o_aer_data<3>   |         6.487(R)|      SLOW  |         3.987(R)|      FAST  |r_generated_clock |   0.000|
+o_aer_req       |         8.934(R)|      SLOW  |         5.535(R)|      FAST  |r_generated_clock |   0.000|
+o_status_leds<0>|         4.806(R)|      SLOW  |         2.912(R)|      FAST  |r_generated_clock |   0.000|
+o_status_leds<1>|         4.603(R)|      SLOW  |         2.811(R)|      FAST  |r_generated_clock |   0.000|
+o_status_leds<2>|         4.651(R)|      SLOW  |         2.833(R)|      FAST  |r_generated_clock |   0.000|
+o_status_leds<3>|         4.659(R)|      SLOW  |         2.821(R)|      FAST  |r_generated_clock |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock i_clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clock        |   13.155|   13.155|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+--------------------+--------------------+---------+
+Source Pad          |Destination Pad     |  Delay  |
+--------------------+--------------------+---------+
+i_clock             |o_ext_clock_to_NASIC|    7.190|
+i_ext_rst           |o_ext_clock_to_NASIC|   17.499|
+i_ext_rst_from_NASIC|o_ext_clock_to_NASIC|   11.316|
+--------------------+--------------------+---------+
+
+
+Analysis completed Fri Oct 16 15:17:13 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4770 MB
+
+
+

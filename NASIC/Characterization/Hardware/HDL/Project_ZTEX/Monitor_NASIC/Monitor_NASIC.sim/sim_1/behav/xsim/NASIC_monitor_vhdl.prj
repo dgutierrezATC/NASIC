@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd" \
+"../../../../Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd" \
+"../../../../Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd" \
+"../../../../Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd" \
+"../../../../Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd" \
+"../../../../Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd" \
+
+# Do not sort compile order
+nosort

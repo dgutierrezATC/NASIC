@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 20:03:14 2020
+# Process ID: 13548
+# Current directory: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1
+# Command line: vivado.exe -log NASIC_monitor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NASIC_monitor.tcl
+# Log file: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.vds
+# Journal file: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source NASIC_monitor.tcl -notrace

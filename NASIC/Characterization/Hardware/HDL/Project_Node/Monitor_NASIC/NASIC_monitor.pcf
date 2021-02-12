@@ -1,0 +1,52 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 16 15:16:30 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_ext_clock_to_NASIC" LOCATE = SITE "T1" LEVEL 1;
+COMP "i_aer_ack" LOCATE = SITE "Y21" LEVEL 1;
+COMP "i_ext_rst" LOCATE = SITE "A20" LEVEL 1;
+COMP "i_clock" LOCATE = SITE "AB13" LEVEL 1;
+COMP "o_aer_req" LOCATE = SITE "N20" LEVEL 1;
+COMP "o_aer_data<0>" LOCATE = SITE "M21" LEVEL 1;
+COMP "o_aer_data<1>" LOCATE = SITE "K22" LEVEL 1;
+COMP "o_aer_data<2>" LOCATE = SITE "J22" LEVEL 1;
+COMP "o_aer_data<3>" LOCATE = SITE "H21" LEVEL 1;
+COMP "o_aer_data<4>" LOCATE = SITE "F22" LEVEL 1;
+COMP "o_aer_data<5>" LOCATE = SITE "E22" LEVEL 1;
+COMP "o_aer_data<6>" LOCATE = SITE "D21" LEVEL 1;
+COMP "o_aer_data<7>" LOCATE = SITE "B22" LEVEL 1;
+COMP "o_aer_data<8>" LOCATE = SITE "B21" LEVEL 1;
+COMP "o_aer_data<9>" LOCATE = SITE "C22" LEVEL 1;
+COMP "i_spikes_from_NASIC<0>" LOCATE = SITE "E1" LEVEL 1;
+COMP "i_spikes_from_NASIC<1>" LOCATE = SITE "F2" LEVEL 1;
+COMP "i_spikes_from_NASIC<2>" LOCATE = SITE "D2" LEVEL 1;
+COMP "i_spikes_from_NASIC<3>" LOCATE = SITE "D1" LEVEL 1;
+COMP "i_spikes_from_NASIC<4>" LOCATE = SITE "B1" LEVEL 1;
+COMP "i_spikes_from_NASIC<5>" LOCATE = SITE "C1" LEVEL 1;
+COMP "i_spikes_from_NASIC<6>" LOCATE = SITE "G1" LEVEL 1;
+COMP "i_spikes_from_NASIC<7>" LOCATE = SITE "F1" LEVEL 1;
+COMP "i_spikes_from_NASIC<8>" LOCATE = SITE "H1" LEVEL 1;
+COMP "i_spikes_from_NASIC<9>" LOCATE = SITE "H2" LEVEL 1;
+COMP "i_ext_rst_from_NASIC" LOCATE = SITE "N1" LEVEL 1;
+COMP "o_aer_data<10>" LOCATE = SITE "D22" LEVEL 1;
+COMP "o_aer_data<11>" LOCATE = SITE "F21" LEVEL 1;
+COMP "o_aer_data<12>" LOCATE = SITE "G22" LEVEL 1;
+COMP "o_aer_data<13>" LOCATE = SITE "H22" LEVEL 1;
+COMP "o_aer_data<14>" LOCATE = SITE "K21" LEVEL 1;
+COMP "o_aer_data<15>" LOCATE = SITE "L22" LEVEL 1;
+COMP "o_status_leds<0>" LOCATE = SITE "N3" LEVEL 1;
+COMP "o_status_leds<1>" LOCATE = SITE "P1" LEVEL 1;
+COMP "o_status_leds<2>" LOCATE = SITE "P2" LEVEL 1;
+COMP "o_status_leds<3>" LOCATE = SITE "R1" LEVEL 1;
+COMP "i_spikes_from_NASIC<10>" LOCATE = SITE "K2" LEVEL 1;
+COMP "i_spikes_from_NASIC<11>" LOCATE = SITE "J1" LEVEL 1;
+COMP "i_spikes_from_NASIC<12>" LOCATE = SITE "M2" LEVEL 1;
+COMP "i_spikes_from_NASIC<13>" LOCATE = SITE "M1" LEVEL 1;
+COMP "i_spikes_from_NASIC<14>" LOCATE = SITE "K1" LEVEL 1;
+COMP "i_spikes_from_NASIC<15>" LOCATE = SITE "L1" LEVEL 1;
+PIN U_NASIC_clk_gen/clkout1_buf_pin<1> = BEL "U_NASIC_clk_gen/clkout1_buf"
+        PINNAME O;
+PIN "U_NASIC_clk_gen/clkout1_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

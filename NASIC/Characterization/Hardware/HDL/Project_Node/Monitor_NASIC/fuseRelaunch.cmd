@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_Node/Monitor_NASIC/NASIC_monitor_tb_isim_beh.exe" -prj "D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_Node/Monitor_NASIC/NASIC_monitor_tb_beh.prj" "work.NASIC_monitor_tb" 

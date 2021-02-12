@@ -1,0 +1,1 @@
+-wto "7dab25b7ab5b473385d4685d0a6359c1" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "NASIC_monitor_tb_behav" "xil_defaultlib.NASIC_monitor_tb" -log "elaborate.log" 

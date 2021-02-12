@@ -1,0 +1,90 @@
+############################################################################
+# External clock & external reset
+############################################################################
+
+# External clock
+NET "i_clock"  LOC = "ab13" ;
+
+# External reset button
+NET "i_ext_rst"  LOC = "A20"; 
+#NET "i_ext_rst" CLOCK_DEDICATED_ROUTE = FALSE ;
+
+############################################################################
+# AER - SpiNNaker interface
+############################################################################
+
+# AER OUT
+
+ 
+# 1: 3.3V
+# 2: GND
+NET "i_spikes_from_NASIC<4>"  LOC = "B1" ; # 3: SPIKES 4
+NET "i_spikes_from_NASIC<5>"  LOC = "C1" ; # 4: SPIKES 5
+NET "i_spikes_from_NASIC<2>"  LOC = "D2" ; # 5: SPIKES 2
+NET "i_spikes_from_NASIC<3>"  LOC = "D1" ; # 6: SPIKES 3
+NET "i_spikes_from_NASIC<0>"  LOC = "E1" ; # 7: SPIKES 0
+NET "i_spikes_from_NASIC<1>"  LOC = "F2" ; # 8: SPIKES 1
+NET "i_spikes_from_NASIC<7>"  LOC = "F1" ; # 9: SPIKES 7
+NET "i_spikes_from_NASIC<6>"  LOC = "G1"; # 10: SPIKES 6
+NET "i_spikes_from_NASIC<9>"  LOC = "H2"; # 11: SPIKES 9
+NET "i_spikes_from_NASIC<8>"  LOC = "H1"; # 12: SPIKES 8
+NET "i_spikes_from_NASIC<11>"  LOC = "J1" ; # 13: SPIKES 11
+NET "i_spikes_from_NASIC<10>"  LOC = "K2" ; # 14: SPIKES 10
+NET "i_spikes_from_NASIC<14>"  LOC = "K1" ;# 15: SPIKES 14
+NET "i_spikes_from_NASIC<15>"  LOC = "L1" ;# 16: SPIKES 15
+NET "i_spikes_from_NASIC<12>"  LOC = "M2" ;# 17: SPIKES 12
+NET "i_spikes_from_NASIC<13>"  LOC = "M1" ;# 18: SPIKES 13
+# 19: GND
+NET "i_ext_rst_from_NASIC"  LOC = "N1" ;# 20: RESET FROM NAS
+NET "o_status_leds<0>"  LOC = "N3" ;# 21: LED 0
+# 22: GND
+NET "o_status_leds<1>"  LOC = "P1" ;# 23: LED 1
+# 24: GND
+NET "o_status_leds<2>"  LOC = "P2" ;# 25: LED 2
+# 26: GND
+NET "o_status_leds<3>"  LOC = "R1" ;# 27: LED 3
+NET "o_ext_clock_to_NASIC"  LOC = "T1" ;# 28: CLK FROM FPGA TO NASIC
+#NET "o_ext_clock_to_NASIC" CLOCK_DEDICATED_ROUTE = TRUE ;
+# 29: N.C.
+# 30: GND
+# 31: N.C.
+# 32: N.C.
+# 33: N.C.
+# 34: N.C.
+# 35: N.C.
+# 36: N.C.
+# 37: N.C.
+# 38: 3.3V
+# 39: 5V
+# 40: GND
+ 
+
+PIN "U_NASIC_clk_gen/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+
+
+
+############################################################################
+# Output to NeuroPod servos
+###########################################################################
+
+NET "o_aer_data<0>"  LOC = "M21" ;
+NET "o_aer_data<1>"  LOC = "K22" ; 
+NET "o_aer_data<2>"  LOC = "J22" ; 
+NET "o_aer_data<3>"  LOC = "H21" ; 
+NET "o_aer_data<4>"  LOC = "F22" ; 
+NET "o_aer_data<5>"  LOC = "E22" ; 
+NET "o_aer_data<6>"  LOC = "D21" ; 
+NET "o_aer_data<7>"  LOC = "B22" ; 
+NET "o_aer_data<8>"  LOC = "B21" ; 
+NET "o_aer_data<9>"  LOC = "C22" ; 
+NET "o_aer_data<10>"  LOC = "D22" ; 
+NET "o_aer_data<11>"  LOC = "F21" ; 
+NET "o_aer_data<12>"  LOC = "G22" ; 
+NET "o_aer_data<13>"  LOC = "H22" ; 
+NET "o_aer_data<14>"  LOC = "K21" ; 
+NET "o_aer_data<15>"  LOC = "L22" ; 
+
+NET "o_aer_req"  LOC = "N20" ;
+NET "i_aer_ack"  LOC = "Y21" ;

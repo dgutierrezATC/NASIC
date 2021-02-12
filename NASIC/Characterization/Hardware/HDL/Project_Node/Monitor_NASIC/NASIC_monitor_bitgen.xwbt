@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Proyectos\Universidad\AER\COFNET\NAS_2017\NAS_asic\Monitor\Project_Node\Monitor_NASIC\NASIC_monitor.ncd
+OUTFILE=D:\Proyectos\Universidad\AER\COFNET\NAS_2017\NAS_asic\Monitor\Project_Node\Monitor_NASIC\NASIC_monitor.bit
+FAMILY=Spartan6
+PART=xc6slx150t-3fgg484
+WORKINGDIR=D:\Proyectos\Universidad\AER\COFNET\NAS_2017\NAS_asic\Monitor\Project_Node\Monitor_NASIC
+LICENSE=ISE
+USER_INFO=201065467_209426030_210633023_405

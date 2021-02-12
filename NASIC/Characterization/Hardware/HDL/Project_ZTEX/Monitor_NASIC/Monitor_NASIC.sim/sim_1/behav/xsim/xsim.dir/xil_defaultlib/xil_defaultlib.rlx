@@ -1,0 +1,12 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd,1561713358,vhdl,,,,aer_distributed_monitor,,,,,,,,
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd,1561713373,vhdl,,,,aer_distributed_monitor_module,,,,,,,,
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd,1554470209,vhdl,,,,aer_out,,,,,,,,
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd,1518778220,vhdl,,,,dualram,,,,,,,,
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd,1602523007,vhdl,,,,nasic_monitor,,,,,,,,
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd,1563380648,vhdl,,,,handshakeout,,,,,,,,
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd,1561644705,vhdl,,,,ramfifo,,,,,,,,
+D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Testbench/NASIC_monitor_tb.vhd,1602523582,vhdl,,,,nasic_monitor_tb,,,,,,,,

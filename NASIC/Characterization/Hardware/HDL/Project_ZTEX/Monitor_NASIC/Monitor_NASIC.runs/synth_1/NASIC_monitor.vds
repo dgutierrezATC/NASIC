@@ -1,0 +1,682 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 20:03:14 2020
+# Process ID: 13548
+# Current directory: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1
+# Command line: vivado.exe -log NASIC_monitor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NASIC_monitor.tcl
+# Log file: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.vds
+# Journal file: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/Dani/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/Dani/AppData/Roaming/Xilinx/Vivado/init.tcl'
+source NASIC_monitor.tcl -notrace
+Command: synth_design -top NASIC_monitor -part xc7a75tcsg324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9100 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 421.875 ; gain = 97.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'NASIC_monitor' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:25]
+	Parameter N_SPIKES bound to: 16 - type: integer 
+	Parameter LOG_2_N_SPIKES bound to: 4 - type: integer 
+	Parameter TAM_AER bound to: 64 - type: integer 
+	Parameter IL_AER bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR' of component 'AER_DISTRIBUTED_MONITOR' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'AER_DISTRIBUTED_MONITOR' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:18]
+	Parameter N_SPIKES bound to: 16 - type: integer 
+	Parameter LOG_2_N_SPIKES bound to: 4 - type: integer 
+	Parameter TAM_AER bound to: 64 - type: integer 
+	Parameter IL_AER bound to: 6 - type: integer 
+	Parameter N_IN_SPIKES bound to: 4 - type: integer 
+	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_0' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:17]
+	Parameter N_IN_SPIKES bound to: 4 - type: integer 
+	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'ramfifo' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:6' bound to instance 'U_AER_FIFO' of component 'ramfifo' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'ramfifo' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 2 - type: integer 
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'dualram' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:6' bound to instance 'uut' of component 'dualram' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'dualram' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dualram' (1#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ramfifo' (2#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'AER_DISTRIBUTED_MONITOR_MODULE' (3#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:17]
+	Parameter N_IN_SPIKES bound to: 4 - type: integer 
+	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_1' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:74]
+	Parameter N_IN_SPIKES bound to: 4 - type: integer 
+	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_2' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:85]
+	Parameter N_IN_SPIKES bound to: 4 - type: integer 
+	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_3' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:96]
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'AER_OUT' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:6' bound to instance 'U_AER_OUT' of component 'AER_OUT' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'AER_OUT' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:18]
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ramfifo' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:6' bound to instance 'U_fifo' of component 'ramfifo' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ramfifo__parameterized1' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 16 - type: integer 
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'dualram' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:6' bound to instance 'uut' of component 'dualram' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'dualram__parameterized1' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dualram__parameterized1' (3#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ramfifo__parameterized1' (3#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
+INFO: [Synth 8-3491] module 'handshakeOut' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:6' bound to instance 'U_handshakeOut' of component 'handshakeOut' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'handshakeOut' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'handshakeOut' (4#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'AER_OUT' (5#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'AER_DISTRIBUTED_MONITOR' (6#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:18]
+WARNING: [Synth 8-614] signal 'r_generated_clock' is read in the process but is not in the sensitivity list [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'NASIC_monitor' (7#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 474.195 ; gain = 149.648
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 474.195 ; gain = 149.648
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a75tcsg324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Sources/NASIC_monitor_ztex.xdc]
+Finished Parsing XDC File [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Sources/NASIC_monitor_ztex.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Sources/NASIC_monitor_ztex.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NASIC_monitor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/NASIC_monitor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 828.051 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 828.051 ; gain = 503.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tcsg324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 828.051 ; gain = 503.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 828.051 ; gain = 503.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "RAM_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:65]
+WARNING: [Synth 8-6014] Unused sequential element index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+INFO: [Synth 8-5546] ROM "RAM_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:65]
+WARNING: [Synth 8-6014] Unused sequential element index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'handshakeOut'
+INFO: [Synth 8-5544] ROM "busy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "req" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sestado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sestado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element r_input_spikes_counter_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:99]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              011
+                 iSTATE1 |                              010 |                              001
+                 iSTATE2 |                              011 |                              010
+                 iSTATE3 |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'sequential' in module 'handshakeOut'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 828.051 ; gain = 503.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 15    
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 66    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 15    
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 261   
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	   2 Input      3 Bit        Muxes := 4     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 339   
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module NASIC_monitor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module dualram 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 64    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module ramfifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	                6 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module AER_DISTRIBUTED_MONITOR_MODULE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module dualram__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 64    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module ramfifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	                6 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module handshakeOut 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module AER_DISTRIBUTED_MONITOR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element U_fifo/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element U_fifo/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element U_fifo/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element r_input_spikes_counter_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:99]
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[62][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[61][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[60][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[59][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[58][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[57][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][12]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][11]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][10]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][9]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][8]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][7]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][6]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][5]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[56][4]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[55][15]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[55][14]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[55][13]) is unused and will be removed from module AER_OUT.
+WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[55][12]) is unused and will be removed from module AER_OUT.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 828.051 ; gain = 503.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 829.582 ; gain = 505.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 831.227 ; gain = 506.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |    21|
+|3     |LUT2  |   187|
+|4     |LUT3  |    26|
+|5     |LUT4  |   194|
+|6     |LUT5  |    99|
+|7     |LUT6  |   696|
+|8     |MUXF7 |    99|
+|9     |MUXF8 |    48|
+|10    |FDCE  |   914|
+|11    |IBUF  |    20|
+|12    |OBUF  |     8|
++------+------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+---------------------------------+------+
+|      |Instance                               |Module                           |Cells |
++------+---------------------------------------+---------------------------------+------+
+|1     |top                                    |                                 |  2313|
+|2     |  U_AER_DISTRIBUTED_MONITOR            |AER_DISTRIBUTED_MONITOR          |  2264|
+|3     |    U_AER_DISTRIBUTED_MONITOR_MODULE_0 |AER_DISTRIBUTED_MONITOR_MODULE   |   433|
+|4     |      U_AER_FIFO                       |ramfifo_7                        |   418|
+|5     |        uut                            |dualram_8                        |   373|
+|6     |    U_AER_DISTRIBUTED_MONITOR_MODULE_1 |AER_DISTRIBUTED_MONITOR_MODULE_0 |   437|
+|7     |      U_AER_FIFO                       |ramfifo_5                        |   422|
+|8     |        uut                            |dualram_6                        |   378|
+|9     |    U_AER_DISTRIBUTED_MONITOR_MODULE_2 |AER_DISTRIBUTED_MONITOR_MODULE_1 |   433|
+|10    |      U_AER_FIFO                       |ramfifo_3                        |   418|
+|11    |        uut                            |dualram_4                        |   373|
+|12    |    U_AER_DISTRIBUTED_MONITOR_MODULE_3 |AER_DISTRIBUTED_MONITOR_MODULE_2 |   436|
+|13    |      U_AER_FIFO                       |ramfifo                          |   421|
+|14    |        uut                            |dualram                          |   375|
+|15    |    U_AER_OUT                          |AER_OUT                          |   512|
+|16    |      U_fifo                           |ramfifo__parameterized1          |   498|
+|17    |        uut                            |dualram__parameterized1          |   448|
+|18    |      U_handshakeOut                   |handshakeOut                     |    14|
++------+---------------------------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 817 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 862.699 ; gain = 184.297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 862.699 ; gain = 538.152
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 167 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+151 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 862.699 ; gain = 550.832
+INFO: [Common 17-1381] The checkpoint 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file NASIC_monitor_utilization_synth.rpt -pb NASIC_monitor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 862.699 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 20:04:02 2020...
