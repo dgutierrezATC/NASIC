@@ -1,22 +1,21 @@
 """--/////////////////////////////////////////////////////////////////////////////////
 --//                                                                                //
 --//    Copyright (c) 2021  Daniel Gutierrez Galan (University of Seville)          //
---//                        Ander Arriandiaga Laresgoiti (IIT)                      //
 --//                                                                                //
---//    This file is part of "Speech Enhancement".                                  //
+--//    This file is part of NASIC.                                                 //
 --//                                                                                //
---//    "Speech Enhancement" is free software: you can redistribute it and/or modify//
+--//    NASIC is free software: you can redistribute it and/or modify               //
 --//    it under the terms of the GNU General Public License as published by        //
 --//    the Free Software Foundation, either version 3 of the License, or           //
 --//    (at your option) any later version.                                         //
 --//                                                                                //
---//    "Speech Enhancement" is distributed in the hope that it will be useful,     //
+--//    NASIC is distributed in the hope that it will be useful,                    //
 --//    but WITHOUT ANY WARRANTY; without even the implied warranty of              //
 --//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the                 //
 --//    GNU General Public License for more details.                                //
 --//                                                                                //
 --//    You should have received a copy of the GNU General Public License           //
---//    along with "Speech Enhancement". If not, see <http://www.gnu.org/licenses/>.//
+--//    along with NASIC. If not, see <http://www.gnu.org/licenses/>.               //
 --//                                                                                //
 --////////////////////////////////////////////////////////////////////////////////////"""
 
@@ -65,14 +64,17 @@ dataset_path = os.path.dirname(__file__)
 # Go back to the parent directoy
 dataset_path = dataset_path.replace('Analysis','')
 # And go through to the events folder
-dataset_path = dataset_path + 'Datasets\\dataset\\events\\pure_tones_aedats\\'
+dataset_path = dataset_path + 'Datasets\\dataset\\events_chip2\\events\\chirp_aedats\\'
 
 ###############################################################
 # Files processing
 ###############################################################
 
 # Load the AEDAT file
-filename = dataset_path + '1396_mono.wav.aedat'
+tonefreq = ['261', '349', '523', '698', '1046', '1396']
+
+filename = dataset_path + 'chirp_10sec_100_20000_hz_mono.wav.aedat'
+imagename = dataset_path + 'Fig_NASIC_chip2_' + 'chirp_10sec_100_20000_hz_mono_'
 #filename = 'D:\\prueba.aedat'
 print("Processing file " + filename + "...")
 
@@ -85,10 +87,13 @@ Functions.check_SpikesFile(recording_file_nas, settings)
 
 # Generate plots
 Plots.spikegram(recording_file_nas, settings)
+plt.savefig(imagename + 'spikegram.png')
 Plots.sonogram(recording_file_nas, settings)
+plt.savefig(imagename + 'sonogram.pdf')
 Plots.histogram(recording_file_nas, settings)
+plt.savefig(imagename + 'histogram.pdf')
 Plots.average_activity(recording_file_nas, settings)
-Plots.difference_between_LR(recording_file_nas, settings)
+plt.savefig(imagename + 'average_activity.pdf')
+plt.close('all')
 
-plt.show()
-#Fig_NASIC_fpga_1396_hz_mono_
+#plt.show()
