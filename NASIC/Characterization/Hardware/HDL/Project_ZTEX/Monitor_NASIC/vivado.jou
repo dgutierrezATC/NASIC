@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Apr 14 13:48:17 2021
+# Process ID: 20608
+# Current directory: D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15900 D:\Universidad\Repositorios\GitHub\Doctorado\NASIC\NASIC\Characterization\Hardware\HDL\Project_ZTEX\Monitor_NASIC\Monitor_NASIC.xpr
+# Log file: D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/vivado.log
+# Journal file: D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

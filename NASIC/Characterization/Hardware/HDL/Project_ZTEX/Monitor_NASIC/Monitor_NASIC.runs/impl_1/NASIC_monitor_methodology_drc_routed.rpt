@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Oct 12 20:05:23 2020
-| Host         : DESKTOP-A0R07AP running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Apr 14 15:23:37 2021
+| Host         : DESKTOP-16SBGVD running 64-bit major release  (build 9200)
 | Command      : report_methodology -file NASIC_monitor_methodology_drc_routed.rpt -pb NASIC_monitor_methodology_drc_routed.pb -rpx NASIC_monitor_methodology_drc_routed.rpx
 | Design       : NASIC_monitor
 | Device       : xc7a75tcsg324-2
@@ -23,15 +23,61 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 914
-+-----------+----------+-----------------------------+------------+
-| Rule      | Severity | Description                 | Violations |
-+-----------+----------+-----------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell | 914        |
-+-----------+----------+-----------------------------+------------+
+             Violations found: 923
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 9          |
+| TIMING-17 | Warning  | Non-clocked sequential cell  | 914        |
++-----------+----------+------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_0/U_AER_FIFO/uut/aer_fifo_data_in[0]_i_2, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/aer_out_wr_reg/CLR, U_AER_DISTRIBUTED_MONITOR/fifo_rd_0_reg/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/FSM_sequential_estado_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/FSM_sequential_estado_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/FSM_sequential_estado_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_i_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_i_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_i_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_i_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_i_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_i_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/memused_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/memused_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/memused_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/memused_reg[3]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_0/U_AER_FIFO/uut/aer_fifo_data_in[1]_i_2__2, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/fifo_rd_1_reg/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/aer_fifo_wr_reg/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/memused_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/memused_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/memused_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/memused_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/memused_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/memused_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_o_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_o_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_o_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_o_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_o_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/index_o_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[23][0]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/uut/RAM[55][1]_i_2, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/fifo_rd_3_reg/CLR, U_AER_DISTRIBUTED_MONITOR/state_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/state_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/int_spikes_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/int_spikes_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/int_spikes_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/int_spikes_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/n_spikes_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/RAM_reg[0][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/RAM_reg[0][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/RAM_reg[10][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/RAM_reg[10][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/RAM_reg[12][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/RAM_reg[12][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/RAM_reg[14][0]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_1/U_AER_FIFO/uut/aer_fifo_data_in[1]_i_2__0, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_i_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_i_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_i_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_i_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_i_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_i_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_o_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_o_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_o_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_o_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_o_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/index_o_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[11][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[11][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[13][0]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/uut/aer_fifo_data_in[1]_i_2__1, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/fifo_rd_2_reg/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/aer_fifo_data_in_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/aer_fifo_data_in_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_i_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_i_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_i_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_i_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_i_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_i_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_o_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_o_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_o_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_o_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_o_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/index_o_reg[5]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/aer_fifo_data_in[1]_i_2, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/aer_fifo_data_in_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/aer_fifo_data_in_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/int_spikes_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/int_spikes_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/int_spikes_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/int_spikes_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/n_spikes_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[0][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[0][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[10][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[10][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[12][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[12][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[14][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_3/U_AER_FIFO/uut/RAM_reg[14][1]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM[63][2]_i_1, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[0][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[0][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[10][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[10][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[11][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[11][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[12][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[12][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[13][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[13][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[14][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[14][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[15][0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[15][1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[16][0]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/aer_fifo_wr_i_2__2, with 2 or more inputs, drives asynchronous reset pin(s) U_AER_DISTRIBUTED_MONITOR/aer_out_data_in_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/aer_out_data_in_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/aer_out_data_in_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/aer_out_data_in_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/aer_fifo_wr_reg/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/memused_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/memused_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/memused_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/memused_reg[3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/memused_reg[4]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_2/U_AER_FIFO/memused_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[0][2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[0][3]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[10][2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_fifo/uut/RAM_reg[10][3]/CLR (the first 15 of 113 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/dataOut[3]_i_3, with 2 or more inputs, drives asynchronous reset pin(s) r_input_spikes_counter_reg[0]/CLR, r_input_spikes_counter_reg[1]/CLR, r_input_spikes_counter_reg[2]/CLR, r_input_spikes_counter_reg[3]/CLR, r_input_spikes_counter_reg[4]/CLR, r_input_spikes_counter_reg[5]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/dataOut_reg[0]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/dataOut_reg[1]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/dataOut_reg[2]/CLR, U_AER_DISTRIBUTED_MONITOR/U_AER_OUT/U_handshakeOut/dataOut_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
 TIMING-17#1 Warning
 Non-clocked sequential cell  
 The clock pin U_AER_DISTRIBUTED_MONITOR/U_AER_DISTRIBUTED_MONITOR_MODULE_0/U_AER_FIFO/index_i_reg[0]/C is not reached by a timing clock

@@ -60,23 +60,20 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param board.repoPaths D:/Xilinx/Boards
   create_project -in_memory -part xc7a75tcsg324-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.cache/wt [current_project]
-  set_property parent.project_path D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.xpr [current_project]
-  set_property ip_output_repo D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.cache/wt [current_project]
+  set_property parent.project_path D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.xpr [current_project]
+  set_property ip_output_repo D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.dcp
-  read_xdc D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Sources/NASIC_monitor_ztex.xdc
+  add_files -quiet D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.dcp
+  read_xdc D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Sources/NASIC_monitor_ztex.xdc
   link_design -top NASIC_monitor -part xc7a75tcsg324-2
   close_msg_db -file init_design.pb
 } RESULT]
@@ -109,7 +106,9 @@ start_step place_design
 set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
-  implement_debug_core 
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
   place_design 
   write_checkpoint -force NASIC_monitor_placed.dcp
   create_report "impl_1_place_report_io_0" "report_io -file NASIC_monitor_io_placed.rpt"
@@ -135,9 +134,10 @@ set rc [catch {
   create_report "impl_1_route_report_methodology_0" "report_methodology -file NASIC_monitor_methodology_drc_routed.rpt -pb NASIC_monitor_methodology_drc_routed.pb -rpx NASIC_monitor_methodology_drc_routed.rpx"
   create_report "impl_1_route_report_power_0" "report_power -file NASIC_monitor_power_routed.rpt -pb NASIC_monitor_power_summary_routed.pb -rpx NASIC_monitor_power_routed.rpx"
   create_report "impl_1_route_report_route_status_0" "report_route_status -file NASIC_monitor_route_status.rpt -pb NASIC_monitor_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file NASIC_monitor_timing_summary_routed.rpt -rpx NASIC_monitor_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file NASIC_monitor_timing_summary_routed.rpt -pb NASIC_monitor_timing_summary_routed.pb -rpx NASIC_monitor_timing_summary_routed.rpx -warn_on_violation "
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file NASIC_monitor_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file NASIC_monitor_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {

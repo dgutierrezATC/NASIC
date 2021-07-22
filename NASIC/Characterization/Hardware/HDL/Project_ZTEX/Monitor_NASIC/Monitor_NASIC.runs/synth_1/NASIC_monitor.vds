@@ -1,104 +1,102 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Oct 12 20:03:14 2020
-# Process ID: 13548
-# Current directory: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Apr 14 15:21:30 2021
+# Process ID: 22228
+# Current directory: D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1
 # Command line: vivado.exe -log NASIC_monitor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NASIC_monitor.tcl
-# Log file: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.vds
-# Journal file: D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1\vivado.jou
+# Log file: D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.vds
+# Journal file: D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-INFO: [Common 17-1460] Use of init.tcl in C:/Users/Dani/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
-Sourcing tcl script 'C:/Users/Dani/AppData/Roaming/Xilinx/Vivado/init.tcl'
 source NASIC_monitor.tcl -notrace
 Command: synth_design -top NASIC_monitor -part xc7a75tcsg324-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9100 
+INFO: Helper process launched with PID 11752 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 421.875 ; gain = 97.328
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 369.883 ; gain = 98.566
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'NASIC_monitor' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'NASIC_monitor' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:25]
 	Parameter N_SPIKES bound to: 16 - type: integer 
 	Parameter LOG_2_N_SPIKES bound to: 4 - type: integer 
 	Parameter TAM_AER bound to: 64 - type: integer 
 	Parameter IL_AER bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR' of component 'AER_DISTRIBUTED_MONITOR' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'AER_DISTRIBUTED_MONITOR' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:18]
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR' of component 'AER_DISTRIBUTED_MONITOR' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'AER_DISTRIBUTED_MONITOR' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:18]
 	Parameter N_SPIKES bound to: 16 - type: integer 
 	Parameter LOG_2_N_SPIKES bound to: 4 - type: integer 
 	Parameter TAM_AER bound to: 64 - type: integer 
 	Parameter IL_AER bound to: 6 - type: integer 
 	Parameter N_IN_SPIKES bound to: 4 - type: integer 
 	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_0' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:63]
-INFO: [Synth 8-638] synthesizing module 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:17]
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_0' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:17]
 	Parameter N_IN_SPIKES bound to: 4 - type: integer 
 	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
 	Parameter WL bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'ramfifo' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:6' bound to instance 'U_AER_FIFO' of component 'ramfifo' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:79]
-INFO: [Synth 8-638] synthesizing module 'ramfifo' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
+INFO: [Synth 8-3491] module 'ramfifo' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:6' bound to instance 'U_AER_FIFO' of component 'ramfifo' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'ramfifo' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
 	Parameter WL bound to: 2 - type: integer 
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
 	Parameter WL bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'dualram' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:6' bound to instance 'uut' of component 'dualram' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'dualram' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+INFO: [Synth 8-3491] module 'dualram' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:6' bound to instance 'uut' of component 'dualram' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'dualram' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
 	Parameter WL bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dualram' (1#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'ramfifo' (2#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'AER_DISTRIBUTED_MONITOR_MODULE' (3#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'dualram' (1#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ramfifo' (2#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'AER_DISTRIBUTED_MONITOR_MODULE' (3#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:17]
 	Parameter N_IN_SPIKES bound to: 4 - type: integer 
 	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_1' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:74]
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_1' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:74]
 	Parameter N_IN_SPIKES bound to: 4 - type: integer 
 	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_2' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:85]
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_2' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:85]
 	Parameter N_IN_SPIKES bound to: 4 - type: integer 
 	Parameter LOG_2_N_IN_SPIKES bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_3' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:96]
+INFO: [Synth 8-3491] module 'AER_DISTRIBUTED_MONITOR_MODULE' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR_MODULE.vhd:6' bound to instance 'U_AER_DISTRIBUTED_MONITOR_MODULE_3' of component 'AER_DISTRIBUTED_MONITOR_MODULE' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:96]
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'AER_OUT' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:6' bound to instance 'U_AER_OUT' of component 'AER_OUT' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:108]
-INFO: [Synth 8-638] synthesizing module 'AER_OUT' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:18]
+INFO: [Synth 8-3491] module 'AER_OUT' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:6' bound to instance 'U_AER_OUT' of component 'AER_OUT' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'AER_OUT' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:18]
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
-	Parameter TAM bound to: 64 - type: integer 
-	Parameter IL bound to: 6 - type: integer 
-	Parameter WL bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'ramfifo' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:6' bound to instance 'U_fifo' of component 'ramfifo' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:56]
-INFO: [Synth 8-638] synthesizing module 'ramfifo__parameterized1' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
 	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ramfifo' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:6' bound to instance 'U_fifo' of component 'ramfifo' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'ramfifo__parameterized1' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
 	Parameter WL bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'dualram' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:6' bound to instance 'uut' of component 'dualram' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'dualram__parameterized1' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
 	Parameter TAM bound to: 64 - type: integer 
 	Parameter IL bound to: 6 - type: integer 
 	Parameter WL bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'dualram__parameterized1' (3#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'ramfifo__parameterized1' (3#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
-INFO: [Synth 8-3491] module 'handshakeOut' declared at 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:6' bound to instance 'U_handshakeOut' of component 'handshakeOut' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:69]
-INFO: [Synth 8-638] synthesizing module 'handshakeOut' [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'handshakeOut' (4#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'AER_OUT' (5#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'AER_DISTRIBUTED_MONITOR' (6#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:18]
-WARNING: [Synth 8-614] signal 'r_generated_clock' is read in the process but is not in the sensitivity list [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'NASIC_monitor' (7#1) [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:25]
+INFO: [Synth 8-3491] module 'dualram' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:6' bound to instance 'uut' of component 'dualram' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'dualram__parameterized1' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+	Parameter TAM bound to: 64 - type: integer 
+	Parameter IL bound to: 6 - type: integer 
+	Parameter WL bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dualram__parameterized1' (3#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/DualPortRAM.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'ramfifo__parameterized1' (3#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:21]
+INFO: [Synth 8-3491] module 'handshakeOut' declared at 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:6' bound to instance 'U_handshakeOut' of component 'handshakeOut' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'handshakeOut' [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'handshakeOut' (4#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/handsakeOut.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'AER_OUT' (5#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_OUT.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'AER_DISTRIBUTED_MONITOR' (6#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/AER_DISTRIBUTED_MONITOR.vhd:18]
+WARNING: [Synth 8-614] signal 'r_generated_clock' is read in the process but is not in the sensitivity list [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'NASIC_monitor' (7#1) [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:25]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 474.195 ; gain = 149.648
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 424.949 ; gain = 153.633
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -108,38 +106,44 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 474.195 ; gain = 149.648
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 424.949 ; gain = 153.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 424.949 ; gain = 153.633
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a75tcsg324-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Sources/NASIC_monitor_ztex.xdc]
-Finished Parsing XDC File [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Sources/NASIC_monitor_ztex.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Sources/NASIC_monitor_ztex.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NASIC_monitor_propImpl.xdc].
+Parsing XDC File [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Sources/NASIC_monitor_ztex.xdc]
+Finished Parsing XDC File [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Sources/NASIC_monitor_ztex.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Sources/NASIC_monitor_ztex.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/NASIC_monitor_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/NASIC_monitor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 828.051 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 778.320 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 828.051 ; gain = 503.504
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 778.320 ; gain = 507.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a75tcsg324-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 828.051 ; gain = 503.504
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 778.320 ; gain = 507.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 828.051 ; gain = 503.504
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 778.320 ; gain = 507.004
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "RAM_reg[63]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[62]" won't be mapped to RAM because it is too sparse
@@ -205,10 +209,7 @@ INFO: [Synth 8-5546] ROM "RAM_reg[3]" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5546] ROM "RAM_reg[2]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[0]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:65]
-WARNING: [Synth 8-6014] Unused sequential element index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:65]
 INFO: [Synth 8-5546] ROM "RAM_reg[63]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[62]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[61]" won't be mapped to RAM because it is too sparse
@@ -246,16 +247,12 @@ INFO: [Synth 8-5546] ROM "RAM_reg[30]" won't be mapped to RAM because it is too 
 INFO: [Synth 8-5546] ROM "RAM_reg[29]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RAM_reg[28]" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:65]
-WARNING: [Synth 8-6014] Unused sequential element index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:65]
 INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'handshakeOut'
 INFO: [Synth 8-5544] ROM "busy" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "req" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "sestado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "sestado" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element r_input_spikes_counter_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:99]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -267,7 +264,7 @@ WARNING: [Synth 8-6014] Unused sequential element r_input_spikes_counter_reg was
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'sequential' in module 'handshakeOut'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 828.051 ; gain = 503.504
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 778.320 ; gain = 507.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -295,8 +292,8 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 1     
 	   6 Input     16 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 16    
-	   2 Input      3 Bit        Muxes := 4     
-	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 13    
 	   2 Input      1 Bit        Muxes := 339   
 	   5 Input      1 Bit        Muxes := 2     
@@ -361,7 +358,8 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 1     
 +---Muxes : 
-	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
 	   5 Input      1 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 1     
 Module AER_DISTRIBUTED_MONITOR 
@@ -390,22 +388,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
-WARNING: [Synth 8-6014] Unused sequential element U_AER_FIFO/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element U_fifo/memused_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:63]
-WARNING: [Synth 8-6014] Unused sequential element U_fifo/index_i_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element U_fifo/index_o_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/ramfifo.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element r_input_spikes_counter_reg was removed.  [D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.srcs/sources_1/imports/Sources/Monitor_ASIC.vhd:99]
+Warning: Parallel synthesis criteria is not met 
 WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][15]) is unused and will be removed from module AER_OUT.
 WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][14]) is unused and will be removed from module AER_OUT.
 WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[63][13]) is unused and will be removed from module AER_OUT.
@@ -508,7 +491,7 @@ WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[55][13]) is unuse
 WARNING: [Synth 8-3332] Sequential element (U_fifo/uut/RAM_reg[55][12]) is unused and will be removed from module AER_OUT.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 828.051 ; gain = 503.504
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 778.320 ; gain = 507.004
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -520,13 +503,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 829.582 ; gain = 505.035
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 778.320 ; gain = 507.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 831.227 ; gain = 506.680
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 779.363 ; gain = 508.047
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -538,7 +521,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -562,7 +545,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -575,7 +558,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -587,25 +570,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -623,12 +606,12 @@ Report Cell Usage:
 +------+------+------+
 |1     |BUFG  |     1|
 |2     |LUT1  |    21|
-|3     |LUT2  |   187|
-|4     |LUT3  |    26|
-|5     |LUT4  |   194|
+|3     |LUT2  |   182|
+|4     |LUT3  |    29|
+|5     |LUT4  |   190|
 |6     |LUT5  |    99|
-|7     |LUT6  |   696|
-|8     |MUXF7 |    99|
+|7     |LUT6  |   704|
+|8     |MUXF7 |   100|
 |9     |MUXF8 |    48|
 |10    |FDCE  |   914|
 |11    |IBUF  |    20|
@@ -639,11 +622,11 @@ Report Instance Areas:
 +------+---------------------------------------+---------------------------------+------+
 |      |Instance                               |Module                           |Cells |
 +------+---------------------------------------+---------------------------------+------+
-|1     |top                                    |                                 |  2313|
-|2     |  U_AER_DISTRIBUTED_MONITOR            |AER_DISTRIBUTED_MONITOR          |  2264|
+|1     |top                                    |                                 |  2316|
+|2     |  U_AER_DISTRIBUTED_MONITOR            |AER_DISTRIBUTED_MONITOR          |  2271|
 |3     |    U_AER_DISTRIBUTED_MONITOR_MODULE_0 |AER_DISTRIBUTED_MONITOR_MODULE   |   433|
 |4     |      U_AER_FIFO                       |ramfifo_7                        |   418|
-|5     |        uut                            |dualram_8                        |   373|
+|5     |        uut                            |dualram_8                        |   374|
 |6     |    U_AER_DISTRIBUTED_MONITOR_MODULE_1 |AER_DISTRIBUTED_MONITOR_MODULE_0 |   437|
 |7     |      U_AER_FIFO                       |ramfifo_5                        |   422|
 |8     |        uut                            |dualram_6                        |   378|
@@ -653,19 +636,19 @@ Report Instance Areas:
 |12    |    U_AER_DISTRIBUTED_MONITOR_MODULE_3 |AER_DISTRIBUTED_MONITOR_MODULE_2 |   436|
 |13    |      U_AER_FIFO                       |ramfifo                          |   421|
 |14    |        uut                            |dualram                          |   375|
-|15    |    U_AER_OUT                          |AER_OUT                          |   512|
-|16    |      U_fifo                           |ramfifo__parameterized1          |   498|
-|17    |        uut                            |dualram__parameterized1          |   448|
-|18    |      U_handshakeOut                   |handshakeOut                     |    14|
+|15    |    U_AER_OUT                          |AER_OUT                          |   519|
+|16    |      U_fifo                           |ramfifo__parameterized1          |   503|
+|17    |        uut                            |dualram__parameterized1          |   447|
+|18    |      U_handshakeOut                   |handshakeOut                     |    16|
 +------+---------------------------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 862.699 ; gain = 538.152
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 817 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 862.699 ; gain = 184.297
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 862.699 ; gain = 538.152
+Synthesis finished with 0 errors, 0 critical warnings and 792 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 808.898 ; gain = 184.211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 808.898 ; gain = 537.582
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 167 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 168 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -673,10 +656,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-151 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+151 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 862.699 ; gain = 550.832
-INFO: [Common 17-1381] The checkpoint 'D:/Proyectos/Universidad/AER/COFNET/NAS_2017/NAS_asic/Monitor/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 808.898 ; gain = 550.617
+INFO: [Common 17-1381] The checkpoint 'D:/Universidad/Repositorios/GitHub/Doctorado/NASIC/NASIC/Characterization/Hardware/HDL/Project_ZTEX/Monitor_NASIC/Monitor_NASIC.runs/synth_1/NASIC_monitor.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file NASIC_monitor_utilization_synth.rpt -pb NASIC_monitor_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 862.699 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 20:04:02 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 808.898 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 14 15:22:19 2021...
